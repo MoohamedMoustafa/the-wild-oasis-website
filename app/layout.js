@@ -10,6 +10,7 @@ const josefin = Josefin_Sans({
 
 export const metadata = {
   title: {
+    // The '%s' in the template will be replaced by the specific page title dynamically.
     template: "%s | The Wild Oasis",
     default: "Welcome | The Wild Oasis",
   },
