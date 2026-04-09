@@ -3,6 +3,9 @@ import { Suspense } from "react";
 import CabinList from "@/app/_components/CabinList";
 import Spinner from "@/app/_components/Spinner";
 
+// Revalidate the page every 60 seconds (ISR)
+// export const revalidate = 3600;
+
 export const metadata = {
   title: "cabins",
 };

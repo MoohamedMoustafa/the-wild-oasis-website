@@ -19,6 +19,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
+export const revalidate = 3600; // Revalidate the page every 60 seconds
+
 export default async function Page({ params }) {
   const { id, name, maxCapacity, regularPrice, discount, image, description } =
     await getCabin(params.cabinId);
@@ -53,7 +55,7 @@ export default async function Page({ params }) {
             <li className="flex gap-3 items-center">
               <MapPinIcon className="h-5 w-5 text-primary-600" />
               <span className="text-lg">
-                Located in the heart of the{" "}
+                Located in the heart of the
                 <span className="font-bold">Dolomites</span> (Italy)
               </span>
             </li>

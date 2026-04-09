@@ -1,8 +1,8 @@
 import Image from "next/image";
 import image1 from "@/public/about-1.jpg";
-import image2 from "@/public/about-2.jpg";
 import { getCabins } from "../_lib/data-service";
 
+// Revalidate the page every 24 hours (ISR)
 export const revalidate = 86400;
 
 export const metadata = {
